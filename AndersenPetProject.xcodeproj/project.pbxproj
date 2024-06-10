@@ -16,6 +16,9 @@
 		DAD0DE1F2C16DA5C00FF5CC7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DAD0DE1E2C16DA5C00FF5CC7 /* SnapKit */; };
 		DAD0DE212C16DFE500FF5CC7 /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE202C16DFE500FF5CC7 /* ImageInfo.swift */; };
 		DAD0DE242C16E4B100FF5CC7 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE232C16E4B100FF5CC7 /* Api.swift */; };
+		DAD0DE262C1701FD00FF5CC7 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE252C1701FD00FF5CC7 /* ImageViewModel.swift */; };
+		DAD0DE282C17022300FF5CC7 /* ImageViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE272C17022300FF5CC7 /* ImageViewModelProtocol.swift */; };
+		DAD0DE2B2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE2A2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		DAD0DE172C16DA3C00FF5CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD0DE202C16DFE500FF5CC7 /* ImageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
 		DAD0DE232C16E4B100FF5CC7 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		DAD0DE252C1701FD00FF5CC7 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		DAD0DE272C17022300FF5CC7 /* ImageViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModelProtocol.swift; sourceTree = "<group>"; };
+		DAD0DE2A2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModelDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 				DAD0DE062C16DA3A00FF5CC7 /* AppDelegate.swift */,
 				DAD0DE082C16DA3A00FF5CC7 /* SceneDelegate.swift */,
 				DAD0DE0A2C16DA3A00FF5CC7 /* ViewController.swift */,
+				DAD0DE252C1701FD00FF5CC7 /* ImageViewModel.swift */,
 				DAD0DE122C16DA3C00FF5CC7 /* Assets.xcassets */,
 				DAD0DE142C16DA3C00FF5CC7 /* LaunchScreen.storyboard */,
 				DAD0DE172C16DA3C00FF5CC7 /* Info.plist */,
@@ -77,10 +84,20 @@
 		DAD0DE222C16E27300FF5CC7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DAD0DE292C1702BB00FF5CC7 /* Protocols */,
 				DAD0DE202C16DFE500FF5CC7 /* ImageInfo.swift */,
 				DAD0DE232C16E4B100FF5CC7 /* Api.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DAD0DE292C1702BB00FF5CC7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DAD0DE272C17022300FF5CC7 /* ImageViewModelProtocol.swift */,
+				DAD0DE2A2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD0DE282C17022300FF5CC7 /* ImageViewModelProtocol.swift in Sources */,
+				DAD0DE262C1701FD00FF5CC7 /* ImageViewModel.swift in Sources */,
 				DAD0DE242C16E4B100FF5CC7 /* Api.swift in Sources */,
+				DAD0DE2B2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift in Sources */,
 				DAD0DE0B2C16DA3A00FF5CC7 /* ViewController.swift in Sources */,
 				DAD0DE212C16DFE500FF5CC7 /* ImageInfo.swift in Sources */,
 				DAD0DE072C16DA3A00FF5CC7 /* AppDelegate.swift in Sources */,
