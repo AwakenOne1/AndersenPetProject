@@ -19,6 +19,7 @@
 		DAD0DE262C1701FD00FF5CC7 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE252C1701FD00FF5CC7 /* ImageViewModel.swift */; };
 		DAD0DE282C17022300FF5CC7 /* ImageViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE272C17022300FF5CC7 /* ImageViewModelProtocol.swift */; };
 		DAD0DE2B2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE2A2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift */; };
+		DAD0DE2D2C17051700FF5CC7 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE2C2C17051700FF5CC7 /* NetworkServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		DAD0DE252C1701FD00FF5CC7 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 		DAD0DE272C17022300FF5CC7 /* ImageViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModelProtocol.swift; sourceTree = "<group>"; };
 		DAD0DE2A2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModelDelegate.swift; sourceTree = "<group>"; };
+		DAD0DE2C2C17051700FF5CC7 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				DAD0DE272C17022300FF5CC7 /* ImageViewModelProtocol.swift */,
 				DAD0DE2A2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift */,
+				DAD0DE2C2C17051700FF5CC7 /* NetworkServiceProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				DAD0DE262C1701FD00FF5CC7 /* ImageViewModel.swift in Sources */,
 				DAD0DE242C16E4B100FF5CC7 /* Api.swift in Sources */,
 				DAD0DE2B2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift in Sources */,
+				DAD0DE2D2C17051700FF5CC7 /* NetworkServiceProtocol.swift in Sources */,
 				DAD0DE0B2C16DA3A00FF5CC7 /* ViewController.swift in Sources */,
 				DAD0DE212C16DFE500FF5CC7 /* ImageInfo.swift in Sources */,
 				DAD0DE072C16DA3A00FF5CC7 /* AppDelegate.swift in Sources */,
