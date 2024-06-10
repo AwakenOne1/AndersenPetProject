@@ -9,9 +9,7 @@ import Foundation
 import UIKit
 
 protocol NetworkServiceProtocol {
-
     var currentPage: Int { get set }
     func fetchImageInfo()
     func fetchImageForInfo(url: URL, completion: @escaping (UIImage) -> Void)
-    
 }

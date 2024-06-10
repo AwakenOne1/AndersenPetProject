@@ -20,6 +20,9 @@
 		DAD0DE282C17022300FF5CC7 /* ImageViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE272C17022300FF5CC7 /* ImageViewModelProtocol.swift */; };
 		DAD0DE2B2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE2A2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift */; };
 		DAD0DE2D2C17051700FF5CC7 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE2C2C17051700FF5CC7 /* NetworkServiceProtocol.swift */; };
+		DAD0DE302C17070100FF5CC7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE2F2C17070100FF5CC7 /* NetworkService.swift */; };
+		DAD0DE322C170CF500FF5CC7 /* NetworkServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE312C170CF500FF5CC7 /* NetworkServiceDelegate.swift */; };
+		DAD0DE392C170DE200FF5CC7 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE382C170DE200FF5CC7 /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		DAD0DE272C17022300FF5CC7 /* ImageViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModelProtocol.swift; sourceTree = "<group>"; };
 		DAD0DE2A2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModelDelegate.swift; sourceTree = "<group>"; };
 		DAD0DE2C2C17051700FF5CC7 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		DAD0DE2F2C17070100FF5CC7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		DAD0DE312C170CF500FF5CC7 /* NetworkServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceDelegate.swift; sourceTree = "<group>"; };
+		DAD0DE382C170DE200FF5CC7 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +76,12 @@
 		DAD0DE052C16DA3A00FF5CC7 /* AndersenPetProject */ = {
 			isa = PBXGroup;
 			children = (
+				DAD0DE362C170D5A00FF5CC7 /* ViewModels */,
+				DAD0DE332C170D4000FF5CC7 /* Views */,
+				DAD0DE2E2C1706B700FF5CC7 /* Services */,
 				DAD0DE222C16E27300FF5CC7 /* Models */,
 				DAD0DE062C16DA3A00FF5CC7 /* AppDelegate.swift */,
 				DAD0DE082C16DA3A00FF5CC7 /* SceneDelegate.swift */,
-				DAD0DE0A2C16DA3A00FF5CC7 /* ViewController.swift */,
-				DAD0DE252C1701FD00FF5CC7 /* ImageViewModel.swift */,
 				DAD0DE122C16DA3C00FF5CC7 /* Assets.xcassets */,
 				DAD0DE142C16DA3C00FF5CC7 /* LaunchScreen.storyboard */,
 				DAD0DE172C16DA3C00FF5CC7 /* Info.plist */,
@@ -86,6 +93,7 @@
 		DAD0DE222C16E27300FF5CC7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DAD0DE372C170DD800FF5CC7 /* Enums */,
 				DAD0DE292C1702BB00FF5CC7 /* Protocols */,
 				DAD0DE202C16DFE500FF5CC7 /* ImageInfo.swift */,
 				DAD0DE232C16E4B100FF5CC7 /* Api.swift */,
@@ -99,8 +107,41 @@
 				DAD0DE272C17022300FF5CC7 /* ImageViewModelProtocol.swift */,
 				DAD0DE2A2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift */,
 				DAD0DE2C2C17051700FF5CC7 /* NetworkServiceProtocol.swift */,
+				DAD0DE312C170CF500FF5CC7 /* NetworkServiceDelegate.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DAD0DE2E2C1706B700FF5CC7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DAD0DE2F2C17070100FF5CC7 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DAD0DE332C170D4000FF5CC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAD0DE0A2C16DA3A00FF5CC7 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DAD0DE362C170D5A00FF5CC7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DAD0DE252C1701FD00FF5CC7 /* ImageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DAD0DE372C170DD800FF5CC7 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				DAD0DE382C170DE200FF5CC7 /* Errors.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,14 +220,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD0DE302C17070100FF5CC7 /* NetworkService.swift in Sources */,
 				DAD0DE282C17022300FF5CC7 /* ImageViewModelProtocol.swift in Sources */,
 				DAD0DE262C1701FD00FF5CC7 /* ImageViewModel.swift in Sources */,
 				DAD0DE242C16E4B100FF5CC7 /* Api.swift in Sources */,
 				DAD0DE2B2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift in Sources */,
 				DAD0DE2D2C17051700FF5CC7 /* NetworkServiceProtocol.swift in Sources */,
 				DAD0DE0B2C16DA3A00FF5CC7 /* ViewController.swift in Sources */,
+				DAD0DE392C170DE200FF5CC7 /* Errors.swift in Sources */,
 				DAD0DE212C16DFE500FF5CC7 /* ImageInfo.swift in Sources */,
 				DAD0DE072C16DA3A00FF5CC7 /* AppDelegate.swift in Sources */,
+				DAD0DE322C170CF500FF5CC7 /* NetworkServiceDelegate.swift in Sources */,
 				DAD0DE092C16DA3A00FF5CC7 /* SceneDelegate.swift in Sources */,
 				DAD0DE112C16DA3A00FF5CC7 /* AndersenPetProject.xcdatamodeld in Sources */,
 			);

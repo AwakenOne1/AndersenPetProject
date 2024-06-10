@@ -9,10 +9,8 @@ import Foundation
 import UIKit
 
 protocol ImageViewModelProtocol: AnyObject {
-    
     var imagesInfo: [ImageInfo] { get set}
     
     func fetchImageInfo()
     func fetchImageForInfo(url: URL, completion: @escaping (UIImage) -> Void)
-    
 }
