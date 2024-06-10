@@ -23,6 +23,7 @@
 		DAD0DE302C17070100FF5CC7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE2F2C17070100FF5CC7 /* NetworkService.swift */; };
 		DAD0DE322C170CF500FF5CC7 /* NetworkServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE312C170CF500FF5CC7 /* NetworkServiceDelegate.swift */; };
 		DAD0DE392C170DE200FF5CC7 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE382C170DE200FF5CC7 /* Errors.swift */; };
+		DAD0DE3B2C17111300FF5CC7 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE3A2C17111300FF5CC7 /* ImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		DAD0DE2F2C17070100FF5CC7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		DAD0DE312C170CF500FF5CC7 /* NetworkServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceDelegate.swift; sourceTree = "<group>"; };
 		DAD0DE382C170DE200FF5CC7 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		DAD0DE3A2C17111300FF5CC7 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				DAD0DE0A2C16DA3A00FF5CC7 /* ViewController.swift */,
+				DAD0DE3A2C17111300FF5CC7 /* ImageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				DAD0DE262C1701FD00FF5CC7 /* ImageViewModel.swift in Sources */,
 				DAD0DE242C16E4B100FF5CC7 /* Api.swift in Sources */,
 				DAD0DE2B2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift in Sources */,
+				DAD0DE3B2C17111300FF5CC7 /* ImageCell.swift in Sources */,
 				DAD0DE2D2C17051700FF5CC7 /* NetworkServiceProtocol.swift in Sources */,
 				DAD0DE0B2C16DA3A00FF5CC7 /* ViewController.swift in Sources */,
 				DAD0DE392C170DE200FF5CC7 /* Errors.swift in Sources */,
