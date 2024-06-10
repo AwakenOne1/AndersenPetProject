@@ -19,6 +19,11 @@ final class ImageViewModel: ImageViewModelProtocol, NetworkServiceDelegate {
     weak var delegate: ImageViewModelDelegate?
     private lazy var networkService: NetworkServiceProtocol = NetworkService(delegate: self)
     
+    
+    func increasePageNumber() {
+           networkService.currentPage += 1
+    }
+    
     func fetchImageInfo() {
         networkService.fetchImageInfo()
     }
