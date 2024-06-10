@@ -10,10 +10,10 @@
 		DAD0DE072C16DA3A00FF5CC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE062C16DA3A00FF5CC7 /* AppDelegate.swift */; };
 		DAD0DE092C16DA3A00FF5CC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE082C16DA3A00FF5CC7 /* SceneDelegate.swift */; };
 		DAD0DE0B2C16DA3A00FF5CC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE0A2C16DA3A00FF5CC7 /* ViewController.swift */; };
-		DAD0DE0E2C16DA3A00FF5CC7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DAD0DE0D2C16DA3A00FF5CC7 /* Base */; };
 		DAD0DE112C16DA3A00FF5CC7 /* AndersenPetProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE0F2C16DA3A00FF5CC7 /* AndersenPetProject.xcdatamodeld */; };
 		DAD0DE132C16DA3C00FF5CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD0DE122C16DA3C00FF5CC7 /* Assets.xcassets */; };
 		DAD0DE162C16DA3C00FF5CC7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DAD0DE152C16DA3C00FF5CC7 /* Base */; };
+		DAD0DE1F2C16DA5C00FF5CC7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DAD0DE1E2C16DA5C00FF5CC7 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +21,6 @@
 		DAD0DE062C16DA3A00FF5CC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAD0DE082C16DA3A00FF5CC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DAD0DE0A2C16DA3A00FF5CC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DAD0DE0D2C16DA3A00FF5CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAD0DE102C16DA3A00FF5CC7 /* AndersenPetProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AndersenPetProject.xcdatamodel; sourceTree = "<group>"; };
 		DAD0DE122C16DA3C00FF5CC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAD0DE152C16DA3C00FF5CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD0DE1F2C16DA5C00FF5CC7 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,6 @@
 				DAD0DE062C16DA3A00FF5CC7 /* AppDelegate.swift */,
 				DAD0DE082C16DA3A00FF5CC7 /* SceneDelegate.swift */,
 				DAD0DE0A2C16DA3A00FF5CC7 /* ViewController.swift */,
-				DAD0DE0C2C16DA3A00FF5CC7 /* Main.storyboard */,
 				DAD0DE122C16DA3C00FF5CC7 /* Assets.xcassets */,
 				DAD0DE142C16DA3C00FF5CC7 /* LaunchScreen.storyboard */,
 				DAD0DE172C16DA3C00FF5CC7 /* Info.plist */,
@@ -86,6 +85,9 @@
 			dependencies = (
 			);
 			name = AndersenPetProject;
+			packageProductDependencies = (
+				DAD0DE1E2C16DA5C00FF5CC7 /* SnapKit */,
+			);
 			productName = AndersenPetProject;
 			productReference = DAD0DE032C16DA3A00FF5CC7 /* AndersenPetProject.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +116,9 @@
 				Base,
 			);
 			mainGroup = DAD0DDFA2C16DA3A00FF5CC7;
+			packageReferences = (
+				DAD0DE1D2C16DA5C00FF5CC7 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = DAD0DE042C16DA3A00FF5CC7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,7 +135,6 @@
 			files = (
 				DAD0DE132C16DA3C00FF5CC7 /* Assets.xcassets in Resources */,
 				DAD0DE162C16DA3C00FF5CC7 /* Base in Resources */,
-				DAD0DE0E2C16DA3A00FF5CC7 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DAD0DE0C2C16DA3A00FF5CC7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DAD0DE0D2C16DA3A00FF5CC7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DAD0DE142C16DA3C00FF5CC7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,7 +297,7 @@
 				INFOPLIST_FILE = AndersenPetProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,7 +325,7 @@
 				INFOPLIST_FILE = AndersenPetProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -367,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DAD0DE1D2C16DA5C00FF5CC7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAD0DE1E2C16DA5C00FF5CC7 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAD0DE1D2C16DA5C00FF5CC7 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DAD0DE0F2C16DA3A00FF5CC7 /* AndersenPetProject.xcdatamodeld */ = {
