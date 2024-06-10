@@ -14,6 +14,7 @@
 		DAD0DE132C16DA3C00FF5CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD0DE122C16DA3C00FF5CC7 /* Assets.xcassets */; };
 		DAD0DE162C16DA3C00FF5CC7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DAD0DE152C16DA3C00FF5CC7 /* Base */; };
 		DAD0DE1F2C16DA5C00FF5CC7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DAD0DE1E2C16DA5C00FF5CC7 /* SnapKit */; };
+		DAD0DE212C16DFE500FF5CC7 /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE202C16DFE500FF5CC7 /* ImageInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		DAD0DE122C16DA3C00FF5CC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAD0DE152C16DA3C00FF5CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAD0DE172C16DA3C00FF5CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD0DE202C16DFE500FF5CC7 /* ImageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				DAD0DE142C16DA3C00FF5CC7 /* LaunchScreen.storyboard */,
 				DAD0DE172C16DA3C00FF5CC7 /* Info.plist */,
 				DAD0DE0F2C16DA3A00FF5CC7 /* AndersenPetProject.xcdatamodeld */,
+				DAD0DE202C16DFE500FF5CC7 /* ImageInfo.swift */,
 			);
 			path = AndersenPetProject;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAD0DE0B2C16DA3A00FF5CC7 /* ViewController.swift in Sources */,
+				DAD0DE212C16DFE500FF5CC7 /* ImageInfo.swift in Sources */,
 				DAD0DE072C16DA3A00FF5CC7 /* AppDelegate.swift in Sources */,
 				DAD0DE092C16DA3A00FF5CC7 /* SceneDelegate.swift in Sources */,
 				DAD0DE112C16DA3A00FF5CC7 /* AndersenPetProject.xcdatamodeld in Sources */,
