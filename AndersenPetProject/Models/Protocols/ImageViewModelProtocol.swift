@@ -12,7 +12,10 @@ protocol ImageViewModelProtocol: AnyObject {
     var imagesInfo: [ImageInfo] { get set}
     var delegate: ImageViewModelDelegate? { get set}
     
+    func checkIfSaved(id: String) -> Bool
     func increasePageNumber()
     func fetchImageInfo()
     func fetchImageForInfo(url: URL, completion: @escaping (UIImage) -> Void)
+    func deleteImageFromFavourite(imageInfo: ImageInfo)
+    func saveImageToFavourites(imageInfo: ImageInfo)
 }

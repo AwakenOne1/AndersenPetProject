@@ -29,6 +29,10 @@
 		DAD0DE412C185D0200FF5CC7 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE402C185D0200FF5CC7 /* CoreDataService.swift */; };
 		DAD0DE4C2C18603500FF5CC7 /* ImageEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE4A2C18603500FF5CC7 /* ImageEntity+CoreDataClass.swift */; };
 		DAD0DE4D2C18603500FF5CC7 /* ImageEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE4B2C18603500FF5CC7 /* ImageEntity+CoreDataProperties.swift */; };
+		DAD0DE502C1866B700FF5CC7 /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE4F2C1866B700FF5CC7 /* DetailPageViewController.swift */; };
+		DAD0DE522C1866EC00FF5CC7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE512C1866EC00FF5CC7 /* DetailViewController.swift */; };
+		DAD0DE542C18673B00FF5CC7 /* DetailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE532C18673B00FF5CC7 /* DetailDelegate.swift */; };
+		DAD0DE562C18675700FF5CC7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE552C18675700FF5CC7 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +59,10 @@
 		DAD0DE402C185D0200FF5CC7 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		DAD0DE4A2C18603500FF5CC7 /* ImageEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DAD0DE4B2C18603500FF5CC7 /* ImageEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DAD0DE4F2C1866B700FF5CC7 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
+		DAD0DE512C1866EC00FF5CC7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DAD0DE532C18673B00FF5CC7 /* DetailDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDelegate.swift; sourceTree = "<group>"; };
+		DAD0DE552C18675700FF5CC7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +132,7 @@
 				DAD0DE312C170CF500FF5CC7 /* NetworkServiceDelegate.swift */,
 				DAD0DE3C2C185B6E00FF5CC7 /* CoreDataServiceProtocol.swift */,
 				DAD0DE3E2C185B8A00FF5CC7 /* CoreDataServiceDelegate.swift */,
+				DAD0DE532C18673B00FF5CC7 /* DetailDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -140,6 +149,7 @@
 		DAD0DE332C170D4000FF5CC7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DAD0DE4E2C18668B00FF5CC7 /* DetailView */,
 				DAD0DE0A2C16DA3A00FF5CC7 /* ViewController.swift */,
 				DAD0DE3A2C17111300FF5CC7 /* ImageCell.swift */,
 			);
@@ -158,8 +168,18 @@
 			isa = PBXGroup;
 			children = (
 				DAD0DE382C170DE200FF5CC7 /* Errors.swift */,
+				DAD0DE552C18675700FF5CC7 /* Constants.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		DAD0DE4E2C18668B00FF5CC7 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				DAD0DE4F2C1866B700FF5CC7 /* DetailPageViewController.swift */,
+				DAD0DE512C1866EC00FF5CC7 /* DetailViewController.swift */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,11 +258,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD0DE502C1866B700FF5CC7 /* DetailPageViewController.swift in Sources */,
 				DAD0DE412C185D0200FF5CC7 /* CoreDataService.swift in Sources */,
 				DAD0DE302C17070100FF5CC7 /* NetworkService.swift in Sources */,
 				DAD0DE282C17022300FF5CC7 /* ImageViewModelProtocol.swift in Sources */,
 				DAD0DE262C1701FD00FF5CC7 /* ImageViewModel.swift in Sources */,
 				DAD0DE242C16E4B100FF5CC7 /* Api.swift in Sources */,
+				DAD0DE562C18675700FF5CC7 /* Constants.swift in Sources */,
+				DAD0DE522C1866EC00FF5CC7 /* DetailViewController.swift in Sources */,
 				DAD0DE2B2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift in Sources */,
 				DAD0DE3B2C17111300FF5CC7 /* ImageCell.swift in Sources */,
 				DAD0DE2D2C17051700FF5CC7 /* NetworkServiceProtocol.swift in Sources */,
@@ -253,6 +276,7 @@
 				DAD0DE3D2C185B6E00FF5CC7 /* CoreDataServiceProtocol.swift in Sources */,
 				DAD0DE072C16DA3A00FF5CC7 /* AppDelegate.swift in Sources */,
 				DAD0DE322C170CF500FF5CC7 /* NetworkServiceDelegate.swift in Sources */,
+				DAD0DE542C18673B00FF5CC7 /* DetailDelegate.swift in Sources */,
 				DAD0DE092C16DA3A00FF5CC7 /* SceneDelegate.swift in Sources */,
 				DAD0DE4C2C18603500FF5CC7 /* ImageEntity+CoreDataClass.swift in Sources */,
 				DAD0DE4D2C18603500FF5CC7 /* ImageEntity+CoreDataProperties.swift in Sources */,
