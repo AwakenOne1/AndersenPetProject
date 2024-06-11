@@ -51,5 +51,17 @@ struct Urls: Codable {
     var regularURL: URL {
         return URL(string: regular)!
     }
+}
 
+extension ImageInfo {
+    func toImageEntity(in context: NSManagedObjectContext) -> ImageEntity {
+        let entity = ImageEntity(context: context)
+        entity.id = id
+        entity.slug = slug
+        entity.altDescription = altDescription
+        entity.smallURL = urls.small
+        entity.regularUrl = urls.regular
+        entity.isFavourite = isFavourite
+        return entity
+    }
 }

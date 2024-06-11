@@ -26,6 +26,9 @@
 		DAD0DE3B2C17111300FF5CC7 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE3A2C17111300FF5CC7 /* ImageCell.swift */; };
 		DAD0DE3D2C185B6E00FF5CC7 /* CoreDataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE3C2C185B6E00FF5CC7 /* CoreDataServiceProtocol.swift */; };
 		DAD0DE3F2C185B8A00FF5CC7 /* CoreDataServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE3E2C185B8A00FF5CC7 /* CoreDataServiceDelegate.swift */; };
+		DAD0DE412C185D0200FF5CC7 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE402C185D0200FF5CC7 /* CoreDataService.swift */; };
+		DAD0DE4C2C18603500FF5CC7 /* ImageEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE4A2C18603500FF5CC7 /* ImageEntity+CoreDataClass.swift */; };
+		DAD0DE4D2C18603500FF5CC7 /* ImageEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE4B2C18603500FF5CC7 /* ImageEntity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		DAD0DE3A2C17111300FF5CC7 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		DAD0DE3C2C185B6E00FF5CC7 /* CoreDataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceProtocol.swift; sourceTree = "<group>"; };
 		DAD0DE3E2C185B8A00FF5CC7 /* CoreDataServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceDelegate.swift; sourceTree = "<group>"; };
+		DAD0DE402C185D0200FF5CC7 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		DAD0DE4A2C18603500FF5CC7 /* ImageEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DAD0DE4B2C18603500FF5CC7 /* ImageEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,8 @@
 				DAD0DE372C170DD800FF5CC7 /* Enums */,
 				DAD0DE292C1702BB00FF5CC7 /* Protocols */,
 				DAD0DE202C16DFE500FF5CC7 /* ImageInfo.swift */,
+				DAD0DE4B2C18603500FF5CC7 /* ImageEntity+CoreDataProperties.swift */,
+				DAD0DE4A2C18603500FF5CC7 /* ImageEntity+CoreDataClass.swift */,
 				DAD0DE232C16E4B100FF5CC7 /* Api.swift */,
 			);
 			path = Models;
@@ -124,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				DAD0DE2F2C17070100FF5CC7 /* NetworkService.swift */,
+				DAD0DE402C185D0200FF5CC7 /* CoreDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -229,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD0DE412C185D0200FF5CC7 /* CoreDataService.swift in Sources */,
 				DAD0DE302C17070100FF5CC7 /* NetworkService.swift in Sources */,
 				DAD0DE282C17022300FF5CC7 /* ImageViewModelProtocol.swift in Sources */,
 				DAD0DE262C1701FD00FF5CC7 /* ImageViewModel.swift in Sources */,
@@ -244,6 +254,8 @@
 				DAD0DE072C16DA3A00FF5CC7 /* AppDelegate.swift in Sources */,
 				DAD0DE322C170CF500FF5CC7 /* NetworkServiceDelegate.swift in Sources */,
 				DAD0DE092C16DA3A00FF5CC7 /* SceneDelegate.swift in Sources */,
+				DAD0DE4C2C18603500FF5CC7 /* ImageEntity+CoreDataClass.swift in Sources */,
+				DAD0DE4D2C18603500FF5CC7 /* ImageEntity+CoreDataProperties.swift in Sources */,
 				DAD0DE112C16DA3A00FF5CC7 /* AndersenPetProject.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
