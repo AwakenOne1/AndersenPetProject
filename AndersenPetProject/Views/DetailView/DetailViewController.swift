@@ -24,7 +24,7 @@ class DetailViewController: UIViewController, UIPageViewControllerDataSource, UI
             return UIImage(systemName: "heart")        }
     }
 
-    init(initialIndex: Int, viewModel: ImageViewModel, delegate: DetailDelegate) {
+    init(initialIndex: Int, viewModel: ImageViewModelProtocol, delegate: DetailDelegate) {
         self.initialIndex = initialIndex
         self.currentIndex = initialIndex
         self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)

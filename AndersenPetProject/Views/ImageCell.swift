@@ -10,13 +10,21 @@ import SnapKit
 
 final class ImageCell: UICollectionViewCell {
     var imageView: UIImageView = UIImageView()
+    var favouriteImage = UIImageView()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(imageView)
         imageView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.top.bottom.leading.trailing.equalToSuperview()
         }
+        favouriteImage.image = UIImage(systemName: "heart.fill")
+        addSubview(favouriteImage)
+        favouriteImage.snp.makeConstraints { make in
+            make.top.trailing.equalToSuperview().inset(10)
+            make.width.height.equalTo(15)
+        }
+        favouriteImage.isHidden = true
     }
 
     required init?(coder: NSCoder) {

@@ -14,6 +14,7 @@ protocol ImageViewModelProtocol: AnyObject {
     
     func checkIfSaved(id: String) -> Bool
     func increasePageNumber()
+    func fetchSavedPhotos()
     func fetchImageInfo()
     func fetchImageForInfo(url: URL, completion: @escaping (UIImage) -> Void)
     func deleteImageFromFavourite(imageInfo: ImageInfo)
