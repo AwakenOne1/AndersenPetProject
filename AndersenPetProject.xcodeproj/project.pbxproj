@@ -24,6 +24,8 @@
 		DAD0DE322C170CF500FF5CC7 /* NetworkServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE312C170CF500FF5CC7 /* NetworkServiceDelegate.swift */; };
 		DAD0DE392C170DE200FF5CC7 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE382C170DE200FF5CC7 /* Errors.swift */; };
 		DAD0DE3B2C17111300FF5CC7 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE3A2C17111300FF5CC7 /* ImageCell.swift */; };
+		DAD0DE3D2C185B6E00FF5CC7 /* CoreDataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE3C2C185B6E00FF5CC7 /* CoreDataServiceProtocol.swift */; };
+		DAD0DE3F2C185B8A00FF5CC7 /* CoreDataServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE3E2C185B8A00FF5CC7 /* CoreDataServiceDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		DAD0DE312C170CF500FF5CC7 /* NetworkServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceDelegate.swift; sourceTree = "<group>"; };
 		DAD0DE382C170DE200FF5CC7 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		DAD0DE3A2C17111300FF5CC7 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		DAD0DE3C2C185B6E00FF5CC7 /* CoreDataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceProtocol.swift; sourceTree = "<group>"; };
+		DAD0DE3E2C185B8A00FF5CC7 /* CoreDataServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				DAD0DE2A2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift */,
 				DAD0DE2C2C17051700FF5CC7 /* NetworkServiceProtocol.swift */,
 				DAD0DE312C170CF500FF5CC7 /* NetworkServiceDelegate.swift */,
+				DAD0DE3C2C185B6E00FF5CC7 /* CoreDataServiceProtocol.swift */,
+				DAD0DE3E2C185B8A00FF5CC7 /* CoreDataServiceDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -230,9 +236,11 @@
 				DAD0DE2B2C1702DA00FF5CC7 /* ImageViewModelDelegate.swift in Sources */,
 				DAD0DE3B2C17111300FF5CC7 /* ImageCell.swift in Sources */,
 				DAD0DE2D2C17051700FF5CC7 /* NetworkServiceProtocol.swift in Sources */,
+				DAD0DE3F2C185B8A00FF5CC7 /* CoreDataServiceDelegate.swift in Sources */,
 				DAD0DE0B2C16DA3A00FF5CC7 /* ViewController.swift in Sources */,
 				DAD0DE392C170DE200FF5CC7 /* Errors.swift in Sources */,
 				DAD0DE212C16DFE500FF5CC7 /* ImageInfo.swift in Sources */,
+				DAD0DE3D2C185B6E00FF5CC7 /* CoreDataServiceProtocol.swift in Sources */,
 				DAD0DE072C16DA3A00FF5CC7 /* AppDelegate.swift in Sources */,
 				DAD0DE322C170CF500FF5CC7 /* NetworkServiceDelegate.swift in Sources */,
 				DAD0DE092C16DA3A00FF5CC7 /* SceneDelegate.swift in Sources */,
