@@ -10,7 +10,7 @@ import Foundation
 enum Constants: Int {
     case numberOfLines = 3
     case imageViewInset = 200
-    case bottomInset = 30
+    case bottomInset = 60
     case sideInset = 50
     case slugTopInset = 20
 }

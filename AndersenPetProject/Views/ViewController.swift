@@ -27,11 +27,26 @@ final class ViewController: UIViewController, UICollectionViewDelegateFlowLayout
         viewModel.fetchImageInfo()
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.contentInsetAdjustmentBehavior = .automatic
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(alongsideTransition: { _ in
+            self.collectionView.collectionViewLayout.invalidateLayout()
+        }, completion: nil)
+    }
+    
     // MARK: - FlowLayoutDelegate Methods
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width/3+60, height: 200)
+        let width = view.frame.width
+        let numberOfItemsPerRow: CGFloat = 2
+        let spacing: CGFloat = 16
+        let totalSpacing = (numberOfItemsPerRow - 1) * spacing
+        let itemWidth = (width - totalSpacing) / numberOfItemsPerRow
+        let itemHeight = itemWidth
+        return CGSize(width: itemWidth, height: itemHeight)
     }
 
     // MARK: - DataSource Methods
@@ -104,7 +119,7 @@ final class ViewController: UIViewController, UICollectionViewDelegateFlowLayout
         }
 
         collectionView.snp.makeConstraints { [ unowned self] make in
-            make.top.equalTo(self.view.safeAreaLayoutGuide).inset(50)
+            make.top.equalTo(segmentedControl.snp.bottom).offset(20)
             make.bottom.leading.trailing.equalTo(self.view.safeAreaLayoutGuide)
         }
     }
