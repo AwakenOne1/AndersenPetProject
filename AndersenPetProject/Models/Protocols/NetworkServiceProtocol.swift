@@ -13,4 +13,5 @@ protocol NetworkServiceProtocol {
     func fetchImageInfo()
     func searchImages(for searchText: String)
     func fetchImageForInfo(url: URL, completion: @escaping (UIImage) -> Void)
+    func resetPages()
 }

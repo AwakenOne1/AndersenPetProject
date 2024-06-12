@@ -18,6 +18,7 @@ protocol ImageViewModelProtocol: AnyObject {
     func fetchImageInfo()
     func searchImages(for searchText: String)
     func fetchImageForInfo(url: URL, completion: @escaping (UIImage) -> Void)
+    func resetPages()
     func deleteImageFromFavourite(imageInfo: ImageInfo)
     func saveImageToFavourites(imageInfo: ImageInfo)
 }

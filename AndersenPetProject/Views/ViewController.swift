@@ -48,7 +48,7 @@ final class ViewController: UIViewController, UICollectionViewDelegateFlowLayout
     // MARK: - FlowLayoutDelegate Methods
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = view.frame.width
+        let width = collectionView.bounds.width
         let numberOfItemsPerRow: CGFloat = 2
         let spacing: CGFloat = 16
         let totalSpacing = (numberOfItemsPerRow - 1) * spacing
@@ -96,7 +96,6 @@ final class ViewController: UIViewController, UICollectionViewDelegateFlowLayout
     }
     
     // MARK: - ImageViewModelDelegate
-    
     func reload() {
         DispatchQueue.main.async {
             self.collectionView.reloadData()
@@ -192,6 +191,7 @@ final class ViewController: UIViewController, UICollectionViewDelegateFlowLayout
 
     @objc private func changeSegment() {
         dismissKeyboard()
+        viewModel.resetPages()
         switch segmentedControl.selectedSegmentIndex {
         case 0:
             isPaging = true

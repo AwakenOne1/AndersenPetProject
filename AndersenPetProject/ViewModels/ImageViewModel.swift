@@ -72,4 +72,7 @@ final class ImageViewModel: NetworkServiceDelegate, CoreDataServiceDelegate, Ima
         self.imagesInfo = images
         delegate?.reload()
     }
+    func resetPages() {
+        networkService.resetPages()
+    }
 }

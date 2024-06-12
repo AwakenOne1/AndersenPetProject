@@ -22,6 +22,10 @@ final class NetworkService: NetworkServiceProtocol {
         self.delegate = delegate
     }
     
+    func resetPages() {
+        self.currentPage = 1
+    }
+    
     func fetchImageInfo() {
         var components = URLComponents()
         components.scheme = Api.scheme
@@ -32,7 +36,7 @@ final class NetworkService: NetworkServiceProtocol {
         components.path = Api.listPath
         guard let url = components.url else { return }
         session.dataTask(with: url) {[weak self] data, response, error in
-            if let error = error {
+            if let _ = error {
                 self?.delegate?.didFailWithError(error: Errors.networkError)
             } else if let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode), let data = data {
                 do {
@@ -48,7 +52,7 @@ final class NetworkService: NetworkServiceProtocol {
     
     func fetchImageForInfo(url: URL, completion: @escaping (UIImage) -> Void) {
         session.dataTask(with: url) { [weak self] data, response, error in
-            if let error = error {
+            if let _ = error {
                 self?.delegate?.didFailWithError(error: Errors.networkError)
             } else if let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode), let data = data {
                 DispatchQueue.global().async {
@@ -71,7 +75,7 @@ final class NetworkService: NetworkServiceProtocol {
         components.path = Api.searchPath
         guard let url = components.url else { return }
         session.dataTask(with: url) {[weak self] data, response, error in
-            if let error = error {
+            if let _ = error {
                 self?.delegate?.didFailWithError(error: Errors.networkError)
             } else if let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode), let data = data {
                 do {
