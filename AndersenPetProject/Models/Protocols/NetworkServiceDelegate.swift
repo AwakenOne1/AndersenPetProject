@@ -9,5 +9,5 @@ import Foundation
 
 protocol NetworkServiceDelegate: AnyObject {
     func didFetchImages(_ images: [ImageInfo])
-    func didFailWithError(error: Error)
+    func didFailWithError(error: Errors)
 }

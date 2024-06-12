@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DABFE3172C19842E001AAD93 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFE3162C19842E001AAD93 /* SearchResults.swift */; };
 		DAD0DE072C16DA3A00FF5CC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE062C16DA3A00FF5CC7 /* AppDelegate.swift */; };
 		DAD0DE092C16DA3A00FF5CC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE082C16DA3A00FF5CC7 /* SceneDelegate.swift */; };
 		DAD0DE0B2C16DA3A00FF5CC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DE0A2C16DA3A00FF5CC7 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DABFE3162C19842E001AAD93 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		DAD0DE032C16DA3A00FF5CC7 /* AndersenPetProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndersenPetProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD0DE062C16DA3A00FF5CC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAD0DE082C16DA3A00FF5CC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				DAD0DE372C170DD800FF5CC7 /* Enums */,
 				DAD0DE292C1702BB00FF5CC7 /* Protocols */,
 				DAD0DE202C16DFE500FF5CC7 /* ImageInfo.swift */,
+				DABFE3162C19842E001AAD93 /* SearchResults.swift */,
 				DAD0DE4B2C18603500FF5CC7 /* ImageEntity+CoreDataProperties.swift */,
 				DAD0DE4A2C18603500FF5CC7 /* ImageEntity+CoreDataClass.swift */,
 				DAD0DE232C16E4B100FF5CC7 /* Api.swift */,
@@ -280,6 +283,7 @@
 				DAD0DE092C16DA3A00FF5CC7 /* SceneDelegate.swift in Sources */,
 				DAD0DE4C2C18603500FF5CC7 /* ImageEntity+CoreDataClass.swift in Sources */,
 				DAD0DE4D2C18603500FF5CC7 /* ImageEntity+CoreDataProperties.swift in Sources */,
+				DABFE3172C19842E001AAD93 /* SearchResults.swift in Sources */,
 				DAD0DE112C16DA3A00FF5CC7 /* AndersenPetProject.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

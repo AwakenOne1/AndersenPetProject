@@ -11,5 +11,6 @@ import UIKit
 protocol NetworkServiceProtocol {
     var currentPage: Int { get set }
     func fetchImageInfo()
+    func searchImages(for searchText: String)
     func fetchImageForInfo(url: URL, completion: @escaping (UIImage) -> Void)
 }

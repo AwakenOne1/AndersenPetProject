@@ -11,7 +11,7 @@ import UIKit
 
 final class CoreDataService: CoreDataServiceProtocol {
 
-    weak var delegate: CoreDataServiceDelegate?
+    private weak var delegate: CoreDataServiceDelegate?
 
     init(delegate: CoreDataServiceDelegate?) {
         self.delegate = delegate

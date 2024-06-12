@@ -10,5 +10,5 @@ import Foundation
 protocol CoreDataServiceDelegate: AnyObject {
     func didChangeFavoriteStatus()
     func didFetchSavedPhotos(images: [ImageInfo])
-    func didFailWithError(error: Error)
+    func didFailWithError(error: Errors)
 }

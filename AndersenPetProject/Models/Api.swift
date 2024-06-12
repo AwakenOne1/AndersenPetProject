@@ -11,7 +11,8 @@ struct Api {
     static let apiKey = "No87779kd3Q2rPOrUFije8BkFuXmkbYnpRxCpA4tGFw"
     static let scheme = "https"
     static let host = "api.unsplash.com"
-    static let path = "/photos/"
+    static let listPath = "/photos/"
+    static let searchPath = "/search/photos/"
     static let itemsPerPage = "30"
-    static let queryItems = ["page", "per_page", "client_id"]
+    static let queryItems = ["page", "per_page", "client_id", "query"]
 }
