@@ -200,6 +200,7 @@ final class ViewController: UIViewController, UICollectionViewDelegateFlowLayout
             viewModel.fetchImageInfo()
             hideSearchBar()
         case 1:
+            viewModel.imagesInfo = []
             setupConstraints()
             isPaging = false
             viewModel.fetchSavedPhotos()
